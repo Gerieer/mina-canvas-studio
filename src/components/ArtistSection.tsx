@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ojoImage from "@/assets/ojo.jpg";
+import minaImage from "@/assets/mina-01.jpg";
 
 const ArtistSection = () => {
   return (
