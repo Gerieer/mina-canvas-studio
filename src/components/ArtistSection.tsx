@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ojoImage from "@/assets/ojo.jpg";
+import minaImage from "@/assets/mina-01.jpg";
 
 const ArtistSection = () => {
   return (
@@ -13,9 +13,9 @@ const ArtistSection = () => {
             transition={{ duration: 0.8 }}
           >
             <img
-              src={ojoImage}
-              alt="Ojo - Mina Maldonado"
-              className="w-full aspect-square object-cover shadow-2xl"
+              src={minaImage}
+              alt="Mina Maldonado - Artista"
+              className="w-full aspect-[3/4] object-cover shadow-2xl"
             />
           </motion.div>
           <motion.div
