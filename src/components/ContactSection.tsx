@@ -11,21 +11,21 @@ const ContactSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="font-display text-3xl md:text-4xl font-light text-charcoal tracking-wide mb-3">
+          <h2 className="font-display text-4xl md:text-5xl font-light text-charcoal tracking-wide mb-3">
             Contacto
           </h2>
           <div className="gold-line w-24 mx-auto mb-10" />
 
           <div className="space-y-6">
             <div>
-              <p className="font-body text-xs tracking-[0.2em] uppercase text-warm-gray mb-2">
+              <p className="font-body text-sm tracking-[0.2em] uppercase text-warm-gray mb-2">
                 Consultas generales
               </p>
               <a
                 href="mailto:contacto@artemina.mx"
-                className="font-body text-charcoal hover:text-gold transition-colors inline-flex items-center gap-2"
+                className="font-body text-base text-charcoal hover:text-gold transition-colors inline-flex items-center gap-2"
               >
-                <Mail size={16} />
+                <Mail size={18} />
                 contacto@artemina.mx
               </a>
             </div>
@@ -38,13 +38,13 @@ const ContactSection = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 font-body text-charcoal hover:text-gold transition-colors"
             >
-              <Instagram size={18} />
-              <span className="text-sm tracking-wider">@arte_minna</span>
+              <Instagram size={20} />
+              <span className="text-base tracking-wider">@arte_minna</span>
             </a>
           </div>
 
           <div className="mt-16 pt-8 border-t border-border">
-            <p className="font-body text-xs text-warm-gray tracking-wider">
+            <p className="font-body text-sm text-warm-gray tracking-wider">
               © {new Date().getFullYear()} Arte Mina · Mina Maldonado
             </p>
           </div>

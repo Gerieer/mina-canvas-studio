@@ -114,11 +114,11 @@ const GallerySection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="font-display text-3xl md:text-4xl font-light text-charcoal tracking-wide mb-3">
+          <h2 className="font-display text-4xl md:text-5xl font-light text-charcoal tracking-wide mb-3">
             Galería de Pinturas
           </h2>
           <div className="gold-line w-24 mx-auto mb-6" />
-          <p className="font-body text-warm-gray text-sm md:text-base font-light max-w-2xl mx-auto">
+          <p className="font-body text-warm-gray text-base md:text-lg font-light max-w-2xl mx-auto">
             Una selección de las obras más representativas de Mina. Cada obra refleja su estilo único y la esencia de la persona.
           </p>
         </motion.div>
@@ -143,10 +143,10 @@ const GallerySection = () => {
               </div>
               <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/40 transition-colors duration-500 flex items-end">
                 <div className="p-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                  <p className="font-display text-lg tracking-wide" style={{ color: "white" }}>
+                  <p className="font-display text-xl tracking-wide" style={{ color: "white" }}>
                     {painting.title}
                   </p>
-                  <p className="font-body text-xs font-light tracking-wider" style={{ color: "rgba(255,255,255,0.7)" }}>
+                  <p className="font-body text-sm font-light tracking-wider" style={{ color: "rgba(255,255,255,0.7)" }}>
                     {painting.technique}
                   </p>
                 </div>
@@ -188,15 +188,15 @@ const GallerySection = () => {
                   />
                 </div>
                 <div className="p-8 md:p-10 flex flex-col justify-center">
-                  <h3 className="font-display text-2xl md:text-3xl font-light text-charcoal mb-2">
+                  <h3 className="font-display text-3xl md:text-4xl font-light text-charcoal mb-2">
                     {selected.title}
                   </h3>
-                  <p className="font-body text-xs tracking-wider text-gold uppercase mb-6">
+                  <p className="font-body text-sm tracking-wider text-gold uppercase mb-6">
                     {selected.technique}
                   </p>
                   <div className="gold-line w-12 mb-6" />
                   {selected.description.map((p, i) => (
-                    <p key={i} className="font-body text-warm-gray text-sm font-light leading-relaxed mb-4">
+                    <p key={i} className="font-body text-warm-gray text-base font-light leading-relaxed mb-4">
                       {p}
                     </p>
                   ))}

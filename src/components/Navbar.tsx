@@ -26,7 +26,7 @@ const Navbar = () => {
       <div className="container max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className={`font-display text-lg tracking-[0.15em] uppercase transition-colors ${
+          className={`font-display text-xl tracking-[0.15em] uppercase transition-colors ${
             scrolled ? "text-charcoal" : ""
           }`}
           style={scrolled ? {} : { color: "white" }}
@@ -42,7 +42,7 @@ const Navbar = () => {
             <button
               key={item.id}
               onClick={() => scrollTo(item.id)}
-              className={`font-body text-xs tracking-[0.2em] uppercase hover:text-gold transition-colors ${
+              className={`font-body text-sm tracking-[0.2em] uppercase hover:text-gold transition-colors ${
                 scrolled ? "text-warm-gray" : ""
               }`}
               style={scrolled ? {} : { color: "rgba(255,255,255,0.8)" }}
