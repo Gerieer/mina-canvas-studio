@@ -8,7 +8,8 @@ import proyectoArte from "@/assets/proyecto-arte.jpg";
 import proyectoMina from "@/assets/proyecto-mina.jpg";
 import anatomia from "@/assets/anatomia-resiliencia.jpg";
 import huesos from "@/assets/huesos-y-flores.jpg";
-import corazon from "@/assets/corazon.jpg";
+import sakura from "@/assets/sakura.jpg";
+import proyectoVerde from "@/assets/proyecto-verde.jpg";
 
 interface Painting {
   title: string;
