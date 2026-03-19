@@ -70,16 +70,6 @@ const paintings: Painting[] = [
     ],
   },
   {
-    title: "Corazón",
-    image: corazon,
-    technique: "Técnica mixta sobre tela, 80 x 60 cm",
-    description: [
-      "Una versión íntima del corazón que guarda el universo dentro de sí, donde las grietas se unen con oro en la tradición del kintsugi japonés.",
-      "Las flores de cerezo y el girasol emergen como símbolos de los amores que sostienen y dan sentido a la vida.",
-      "Una obra que celebra la resiliencia y la belleza que nace de las experiencias vividas.",
-    ],
-  },
-  {
     title: "Huesos y Flores",
     image: huesos,
     technique: "Técnica mixta sobre tela, 80 x 60 cm",
@@ -87,6 +77,26 @@ const paintings: Painting[] = [
       "Pinté Huesos y flores para el Día de Muertos, como un diálogo entre la ausencia y la vida que persiste. En el centro, un esqueleto del que brotan dos flores de cempasúchil desde el costado: son la vida que renace desde lo marchito.",
       "El fondo dorado envuelve la escena como un espacio fuera del tiempo, un plano donde lo humano se vuelve luz. No es oro terrenal, sino un brillo espiritual, el resplandor de lo que no muere.",
       "Siete velas acompañan la figura; una de ellas se ha apagado, mientras las otras arden con llamas grandes que dejan un hilo de humo, como si el aire guardara el suspiro de quienes partieron.",
+    ],
+  },
+  {
+    title: "Sakura",
+    image: sakura,
+    technique: "Óleo sobre tela, 50 x 50 cm",
+    description: [
+      "Sakura retrata a un joven sonriendo mientras escucha música, envuelto por la sutil caída de las flores del Sakura.",
+      "La escena refleja un momento de calma y alegría, donde lo cotidiano se funde con la belleza simbólica del sakura, flor que representa la fragilidad, pero también la renovación y la esperanza.",
+      "Él es una persona muy especial en mi vida. Su luz y alegría son tan genuinas como la flor del cerezo: brillan con fuerza incluso después del invierno. Aunque ha enfrentado momentos difíciles, nunca pierde su capacidad de sonreír, de contagiar paz y optimismo.",
+    ],
+  },
+  {
+    title: "Proyecto Verde",
+    image: proyectoVerde,
+    technique: "Óleo sobre tela, 60 x 50 cm",
+    description: [
+      "Proyecto Verde es una obra que captura la memoria de un personaje que dejó una huella en la artista, pero cuya presencia no se traduce en una representación exacta. La obra crea un ambiente único y diferente, alejado de lo común.",
+      "La figura central, oculta su mirada, un detalle que refleja la desaparición de la imagen completa en la memoria de la artista.",
+      "Proyecto Verde es también un testimonio de la idealización de una relación y cómo, con el tiempo, esa idealización cambia.",
     ],
   },
 ];
