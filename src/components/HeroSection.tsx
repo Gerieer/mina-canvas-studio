@@ -15,7 +15,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="font-display text-5xl md:text-7xl lg:text-8xl font-light tracking-[0.15em] uppercase drop-shadow-lg"
+          className="font-display text-6xl md:text-8xl lg:text-9xl font-light tracking-[0.15em] uppercase drop-shadow-lg"
           style={{ color: "white" }}
         >
           Mina Maldonado
@@ -30,7 +30,7 @@ const HeroSection = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
-          className="font-body text-sm md:text-base tracking-[0.3em] uppercase font-light drop-shadow-md"
+          className="font-body text-base md:text-lg tracking-[0.3em] uppercase font-light drop-shadow-md"
           style={{ color: "white" }}
         >
           Pintora Mexicana Contemporánea
