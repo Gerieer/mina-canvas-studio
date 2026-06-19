@@ -54,7 +54,7 @@ const paintings: Painting[] = [
   },
   {
     title: "Soltar",
-    image: soltar,
+    image: soltar.url,
     technique: "Óleo sobre tela, 40 cm de diámetro",
     description: [
       "El viento mueve el cabello y arrastra algunas hojas que se alejan en el aire. Después de la tormenta, llega el momento de dejar ir aquello que ya pasó. No es un gesto de fuerza, sino de aceptación.",
