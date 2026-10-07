@@ -23,26 +23,27 @@ const Navbar = () => {
         scrolled ? "bg-background/95 backdrop-blur-md shadow-sm" : "bg-transparent"
       }`}
     >
-      <div className="container max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="container max-w-6xl mx-auto px-4 md:px-6 py-3 md:py-4 flex flex-wrap items-center justify-center md:justify-between gap-x-3 gap-y-1.5">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className={`font-display text-xl tracking-[0.15em] uppercase transition-colors ${
+          className={`w-full text-center md:w-auto md:text-left font-display text-base md:text-xl tracking-[0.1em] md:tracking-[0.15em] uppercase transition-colors whitespace-nowrap ${
             scrolled ? "text-charcoal" : ""
           }`}
           style={scrolled ? {} : { color: "white" }}
         >
           Arte Mina
         </button>
-        <div className="flex gap-6 md:gap-8">
+        <div className="flex items-center justify-center gap-3 md:gap-8">
           {[
             { label: "Sobre", id: "about" },
             { label: "Galería", id: "gallery" },
+            { label: "Exposiciones", id: "exhibitions" },
             { label: "Contacto", id: "contact" },
           ].map((item) => (
             <button
               key={item.id}
               onClick={() => scrollTo(item.id)}
-              className={`font-body text-sm tracking-[0.2em] uppercase hover:text-gold transition-colors ${
+              className={`font-body text-[10px] md:text-sm tracking-[0.06em] md:tracking-[0.2em] uppercase hover:text-gold transition-colors whitespace-nowrap ${
                 scrolled ? "text-warm-gray" : ""
               }`}
               style={scrolled ? {} : { color: "rgba(255,255,255,0.8)" }}

@@ -5,6 +5,7 @@ import ArtistSection from "@/components/ArtistSection";
 import GallerySection from "@/components/GallerySection";
 import CollectionDespuesSection from "@/components/CollectionDespuesSection";
 import CollectionOjosCerradosSection from "@/components/CollectionOjosCerradosSection";
+import ExhibitionsSection from "@/components/ExhibitionsSection";
 import ContactSection from "@/components/ContactSection";
 
 const Index = () => {
@@ -17,6 +18,7 @@ const Index = () => {
       <GallerySection />
       <CollectionDespuesSection />
       <CollectionOjosCerradosSection />
+      <ExhibitionsSection />
       <ContactSection />
     </div>
   );
