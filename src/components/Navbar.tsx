@@ -23,17 +23,17 @@ const Navbar = () => {
         scrolled ? "bg-background/95 backdrop-blur-md shadow-sm" : "bg-transparent"
       }`}
     >
-      <div className="container max-w-6xl mx-auto px-4 md:px-6 py-3 md:py-4 flex items-center justify-between gap-3">
+      <div className="container max-w-6xl mx-auto px-4 md:px-6 py-3 md:py-4 flex flex-wrap items-center justify-center md:justify-between gap-x-3 gap-y-1.5">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className={`font-display text-base md:text-xl tracking-[0.1em] md:tracking-[0.15em] uppercase transition-colors whitespace-nowrap ${
+          className={`w-full text-center md:w-auto md:text-left font-display text-base md:text-xl tracking-[0.1em] md:tracking-[0.15em] uppercase transition-colors whitespace-nowrap ${
             scrolled ? "text-charcoal" : ""
           }`}
           style={scrolled ? {} : { color: "white" }}
         >
           Arte Mina
         </button>
-        <div className="flex items-center gap-2.5 md:gap-8">
+        <div className="flex items-center justify-center gap-3 md:gap-8">
           {[
             { label: "Sobre", id: "about" },
             { label: "Galería", id: "gallery" },
