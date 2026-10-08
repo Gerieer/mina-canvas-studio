@@ -115,7 +115,7 @@ const GallerySection = () => {
           className="text-center mb-16"
         >
           <h2 className="font-display text-4xl md:text-5xl font-light text-charcoal tracking-wide mb-3">
-            Galería de Pinturas
+            Colección: Proyectos
           </h2>
           <div className="gold-line w-24 mx-auto mb-6" />
           <p className="font-body text-warm-gray text-base md:text-lg font-light max-w-2xl mx-auto">

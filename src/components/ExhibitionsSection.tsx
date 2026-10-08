@@ -26,7 +26,7 @@ const exhibitionsByYear: ExhibitionYear[] = [
   },
   {
     year: "2025",
-    exhibitions: [{ title: "Arteza Mictlan" }],
+    exhibitions: [{ title: "ArtQro 2025" }, { title: "Arteza Mictlan" }],
   },
 ];
 
