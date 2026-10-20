@@ -57,7 +57,7 @@ const CollectionNuevaSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
-                className="group cursor-zoom-in overflow-hidden shadow-lg md:sticky md:top-28"
+                className="group cursor-pointer overflow-hidden shadow-lg md:sticky md:top-28"
                 onClick={() => setSelected(painting)}
               >
                 <img
@@ -109,23 +109,49 @@ const CollectionNuevaSection = () => {
             className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-charcoal/80 backdrop-blur-sm"
             onClick={() => setSelected(null)}
           >
-            <button
-              onClick={() => setSelected(null)}
-              className="absolute top-4 right-4 z-10 p-2 transition-colors"
-              style={{ color: "rgba(255,255,255,0.8)" }}
-              aria-label="Cerrar"
-            >
-              <X size={28} />
-            </button>
-            <motion.img
+            <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
-              src={selected.image}
-              alt={selected.title}
-              className="max-w-full max-h-[90vh] object-contain shadow-2xl"
+              className="bg-background max-w-4xl w-full max-h-[90vh] overflow-y-auto relative"
               onClick={(e) => e.stopPropagation()}
-            />
+            >
+              <button
+                onClick={() => setSelected(null)}
+                className="absolute top-4 right-4 z-10 p-2 text-warm-gray hover:text-charcoal transition-colors"
+                aria-label="Cerrar"
+              >
+                <X size={24} />
+              </button>
+              <div className="grid md:grid-cols-2 gap-0">
+                <div className="aspect-square md:aspect-auto flex items-center justify-center bg-muted/30 p-6">
+                  <img
+                    src={selected.image}
+                    alt={selected.title}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <div className="p-8 md:p-10 flex flex-col justify-center">
+                  <h3 className="font-display text-3xl md:text-4xl font-light text-charcoal mb-2">
+                    {selected.title}
+                  </h3>
+                  <p className="font-body text-sm tracking-wider text-gold uppercase mb-6">
+                    {selected.technique}
+                  </p>
+                  <div className="gold-line w-12 mb-6" />
+                  {selected.description.map((p, i) => (
+                    <p key={i} className="font-body text-warm-gray text-base font-light leading-relaxed mb-4">
+                      {p}
+                    </p>
+                  ))}
+                  {selected.closing?.map((p, i) => (
+                    <p key={`c-${i}`} className="font-body text-warm-gray text-base font-light leading-relaxed mb-4 italic">
+                      {p}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
